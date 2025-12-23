@@ -1,0 +1,147 @@
+===============================
+LINUX BASIC COMMANDS – NOTES
+(Beginner Practice – Day 1)
+===============================
+
+Linux is a command-line based operating system.
+Commands are used to manage files and directories.
+
+--------------------------------
+BASIC NAVIGATION COMMANDS
+--------------------------------
+
+pwd
+Print Working Directory.
+Shows the current directory you are working in.
+
+ls
+Lists files and folders in the current directory.
+
+ls -a
+Lists all files including hidden files.
+
+ls -l
+Shows detailed information of files and folders.
+
+ls -la
+Shows hidden files with detailed information.
+
+cd <directory_name>
+Move into a specific directory.
+
+cd ..
+Move one directory level up.
+
+cd ~
+Move to the home directory.
+
+cd /
+Move to the root directory.
+
+--------------------------------
+DIRECTORY COMMANDS
+--------------------------------
+
+mkdir <directory_name>
+Create a new directory.
+
+mkdir dir1 dir2 dir3
+Create multiple directories at once.
+
+--------------------------------
+FILE COMMANDS
+--------------------------------
+
+touch <file_name>
+Create a new empty file.
+
+touch a.txt b.txt
+Create multiple files at once.
+
+cat <file_name>
+Display the content of a file in the terminal.
+
+nano <file_name>
+Edit a file using the terminal editor.
+Save: Ctrl + O → Enter
+Exit: Ctrl + X
+
+--------------------------------
+COPY & MOVE COMMANDS
+--------------------------------
+
+cp <source> <destination>
+Copy a file from source to destination.
+
+cp -r <source_dir> <destination_dir>
+Copy a directory and its contents.
+
+mv old.txt new.txt
+Rename a file.
+
+mv file.txt directory/
+Move a file into a directory.
+
+--------------------------------
+SEARCH & VIEW COMMANDS
+--------------------------------
+
+grep "word" <file_name>
+Search for a word inside a file.
+
+head <file_name>
+Display the first 10 lines of a file.
+
+tail <file_name>
+Display the last 10 lines of a file.
+
+--------------------------------
+DELETE COMMANDS (WARNING)
+--------------------------------
+
+rm <file_name>
+Delete a file permanently.
+
+rm -r <directory_name>
+Delete a directory and all its contents.
+
+NOTE:
+Linux does not have a recycle bin.
+Deleted files cannot be recovered easily.
+
+--------------------------------
+PERMISSION COMMAND
+--------------------------------
+
+chmod 755 <file_name>
+Change file permissions and make it executable.
+
+Permission meaning:
+r = read
+w = write
+x = execute
+
+--------------------------------
+SCREEN CONTROL
+--------------------------------
+
+clear
+Clear the terminal screen.
+
+Shortcut:
+Ctrl + L
+
+--------------------------------
+PRACTICE FLOW (IMPORTANT)
+--------------------------------
+
+pwd → ls → cd → mkdir/touch → nano/cat → cp/mv → rm
+
+--------------------------------
+FINAL NOTE
+--------------------------------
+Linux commands are best learned through practice.
+Using them daily helps build confidence and speed.
+===============================
+END OF FILE
+===============================
