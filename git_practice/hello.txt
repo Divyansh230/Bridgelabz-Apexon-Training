@@ -1,1 +1,190 @@
-Basically it is a practice session for the github where we perform all the basics operarion reagarding git github and so.. On
+==============================
+GIT COMMANDS – QUICK NOTES
+(For Beginners / Noobs)
+==============================
+
+Git is a version control system used to track code changes.
+
+--------------------------------
+BASIC GIT WORKFLOW
+--------------------------------
+Working Directory → Staging Area → Repository
+
+--------------------------------
+REPOSITORY SETUP
+--------------------------------
+
+git init
+Initialize a new Git repository in the current folder.
+Creates a hidden .git folder.
+
+git clone <repo_url>
+Create a local copy of a remote (GitHub) repository.
+
+--------------------------------
+STATUS & CHECKING
+--------------------------------
+
+git status
+Shows current state of files:
+- untracked
+- modified
+- staged
+
+git status -s
+Shows short summary of status.
+
+--------------------------------
+STAGING AREA
+--------------------------------
+
+git add <file_name>
+Move a specific file from working directory to staging area.
+
+git add .
+Add all files to staging area.
+
+git add -A
+Add all files (new, modified, deleted) to staging area.
+
+--------------------------------
+COMMIT
+--------------------------------
+
+git commit -m "message"
+Save staged changes permanently to repository.
+
+git commit -a -m "message"
+Skip staging area and commit all tracked files directly.
+
+--------------------------------
+HISTORY & LOGS
+--------------------------------
+
+git log
+Show full commit history.
+
+git log --oneline
+Show commit history in one line.
+
+git log -p
+Show commits with changes.
+
+git log -p -2
+Show last 2 commits with differences.
+
+--------------------------------
+DIFFERENCE CHECK
+--------------------------------
+
+git diff
+Show difference between modified files and last commit.
+
+git diff --staged
+Show difference between staging area and last commit.
+
+--------------------------------
+UNDO / RECOVERY
+--------------------------------
+
+git restore --staged <file_name>
+Remove file from staging area (back to working directory).
+
+git checkout -- <file_name>
+Restore file to last committed version.
+
+git checkout -f
+Discard all local changes and restore last commit.
+
+--------------------------------
+FILE OPERATIONS
+--------------------------------
+
+git rm <file_name>
+Delete file from project and Git tracking.
+
+git rm --cached <file_name>
+Remove file from Git tracking but keep it locally.
+
+git mv <old_name> <new_name>
+Rename or move a file using Git.
+
+--------------------------------
+GITIGNORE
+--------------------------------
+
+.gitignore
+Used to ignore files/folders from being tracked by Git.
+Examples:
+node_modules/
+.env
+*.log
+
+--------------------------------
+BRANCHING
+--------------------------------
+
+git branch
+List all branches.
+
+git checkout -b <branch_name>
+Create a new branch and switch to it.
+
+git checkout <branch_name>
+Switch to an existing branch.
+
+git merge <branch_name>
+Merge given branch into current branch.
+
+git branch -d <branch_name>
+Delete a merged branch.
+
+git branch -D <branch_name>
+Force delete a branch (even if not merged).
+
+--------------------------------
+REMOTE & GITHUB
+--------------------------------
+
+git remote
+Show remote repository names.
+
+git remote -v
+Show remote repo names with URLs.
+
+git remote add origin <repo_url>
+Connect local repo to remote (GitHub).
+
+git push -u origin master
+Push local commits to GitHub.
+
+git push
+Push commits after first push.
+
+git push origin --delete <branch_name>
+Delete a remote branch.
+
+--------------------------------
+CONFIGURATION
+--------------------------------
+
+git config --global user.name "Your Name"
+Set username for commits.
+
+git config --global user.email "email@example.com"
+Set email for commits.
+
+git config --global alias.st status
+Create shortcut (alias) for a Git command.
+
+--------------------------------
+IMPORTANT NOTE
+--------------------------------
+Always remember the flow:
+Code → git add → git commit → git push
+
+Git gives you freedom to experiment
+because every change is saved in history.
+==============================
+END OF NOTES
+==============================
